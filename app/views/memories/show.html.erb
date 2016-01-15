@@ -20,9 +20,9 @@
   <hr>
   <%= simple_format(@memory.description) %>
   
-  <div class="">
-    <%= image_tag @memory.image.url(:mmedium) %>
-  </div>
+  
+    <%= image_tag @memory.image.url(:medium) %>
+  
   
   <div class="memory-actions">
     <% if logged_in? && (current_user == @memory.user || current_user.admin?) %>

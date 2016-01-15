@@ -15,7 +15,7 @@
           last updated: <%= time_ago_in_words(memory.updated_at) %> ago</small>
         </div>
       </div>
-      <%=  memory.image.url(:mmedium) %>
+      <%= image_tag memory.image.url(:medium) %>
       
       
       <% if logged_in? && (current_user == memory.user || current_user.admin?) %>
