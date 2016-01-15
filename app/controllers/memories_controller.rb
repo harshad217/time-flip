@@ -49,7 +49,7 @@ class MemoriesController < ApplicationController
   end
   
   def memory_params
-    params.require(:memory).permit(:title, :description, category_ids: [])
+    params.require(:memory).permit(:title, :description, :image)
   end
   
   def require_same_user

@@ -55,5 +55,8 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'rmagick'
 end
 
+# For image uploads
+gem "paperclip", "~> 4.3"

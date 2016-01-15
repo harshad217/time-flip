@@ -7,6 +7,7 @@
       </div>
       
       <div class="memory-body">
+        
         <%= truncate(memory.description, length: 100) %>
         <div class="memory-meta-details">
           <small>Created by: <%= memory.user.username if memory.user%>,
@@ -14,7 +15,7 @@
           last updated: <%= time_ago_in_words(memory.updated_at) %> ago</small>
         </div>
       </div>
-      
+      <%=  memory.image.url(:mmedium) %>
       
       
       <% if logged_in? && (current_user == memory.user || current_user.admin?) %>

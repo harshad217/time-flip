@@ -19,6 +19,11 @@
   <h4 class="center description"><strong>Description:</strong></h4>
   <hr>
   <%= simple_format(@memory.description) %>
+  
+  <div class="">
+    <%= image_tag @memory.image.url(:mmedium) %>
+  </div>
+  
   <div class="memory-actions">
     <% if logged_in? && (current_user == @memory.user || current_user.admin?) %>
       <%= link_to "Edit this memory", edit_memory_path(@memory), class: "btn btn-xs btn-primary" %>

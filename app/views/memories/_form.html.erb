@@ -1,7 +1,7 @@
 <%= render 'shared/errors', obj: @memory %>
 <div class='row'>
   <div class='col-xs-12'>
-    <%= form_for(@memory, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+    <%= form_for(@memory, :html => {multipart: true, class: "form-horizontal", role: "form"}) do |f| %>
       <div class="form-group">
         <div class="control-label col-sm-2">
           <%= f.label :title %>
@@ -20,6 +20,14 @@
         </div>
       </div>
       
+      <div class="form-group">
+        <div class="control-label col-sm-2">
+          <%= f.label :image %>
+        </div>
+        <div class="col-sm-8">
+          <%= f.file_field :image, class: "form-control", placeholder: "Choose a file..", autofocus: true %>
+        </div>
+      </div>
       
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
