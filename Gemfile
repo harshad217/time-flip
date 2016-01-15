@@ -55,7 +55,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem "rmagick", :require => 'RMagick'
+  gem "rmagick", "~> 2.15.4", :require => 'RMagick'
 end
 
 # For image uploads
