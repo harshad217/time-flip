@@ -1,0 +1,81 @@
+$navbar-default-bg: #000000;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+}
+
+.img {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+}
+
+.row {
+  color: #000000;
+}
+
+.col-md-4 {
+  
+  text-align: center;
+}
+
+.col-md-3 {
+  
+  text-align: center;
+}
+
+hr {
+  border-width: 25px 20;
+  border-color: black
+  
+}
+
+.btn-lg {
+  
+  color: #ffffff !important;
+}
+
+
+.memory-actions {
+border-top: 1px solid #eaeaea;
+padding-top: 5px;
+}
+.description {
+margin-top: 0;
+}
+
+.memory-title {
+font-weight: bold;
+font-size: 1.5em;
+}
+.memory-body {
+border-top: 1px solid #eaeaea;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.memory-meta-details {
+border-top: 1px solid #eaeaea;
+margin-top: 15px;
+}
+
+.listing {
+list-style: none;
+padding-left: 0;
+}
+
+.badge {
+background-color: #CEF6F5;
+text-transform: uppercase;
+letter-spacing: -1px;
+font-weight: bold;
+}
+
+.input_checkbox input {
+width: auto !important;
+}
