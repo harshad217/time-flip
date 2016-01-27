@@ -1,5 +1,0 @@
-time.flip
-
-To store moments.
-
-<tt>rake doc:app</tt>.
